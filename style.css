@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    height: 100vh;
+    background: #1a1a1a;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    width: 90%;
+    max-width: 450px;
+    background: #222;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+  }
+  h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #444;
+    color: #ffffff;
+  }
+  h4 {
+    text-align: center;
+    padding: 20px;
+    background-color: #444;
+    color: #ffffff;
+    font-family: cursive;
+  }
+  #newtask {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  #newtask input {
+    width: 75%;
+    height: 45px;
+    border: 2px solid #555;
+    padding: 12px;
+    color: #ffffff;
+    font-weight: 500;
+    border-radius: 5px;
+    background: #333;
+    transition: border-color 0.3s;
+  }
+  #newtask input:focus {
+    outline: none;
+    border-color: #888;
+  }
+  #newtask button {
+    width: 20%;
+    height: 45px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  #newtask button:hover {
+    background-color: #0056b3;
+  }
+  #tasks {
+    padding: 20px;
+    background-color: #333;
+    border-top: 1px solid #444;
+  }
+  .task {
+    background-color: #444;
+    height: 50px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+  }
+  .task:hover {
+    transform: translateY(-2px);
+  }
+  .task span {
+    font-size: 15px;
+    font-weight: 400;
+    color: #ffffff;
+  }
+  .task.completed span {
+    text-decoration: line-through;
+    color: #aaa;
+  }
+  .task.completed .status {
+    color: #007bff;
+    font-weight: bold;
+  }
+  .task button {
+    background-color: #dc3545;
+    color: white;
+    height: 100%;
+    width: 40px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .task button.complete {
+    background-color: #007bff;
+    margin-right: 5px;
+  }
+  .task button.complete:hover {
+    background-color: #0056b3;
+  }
+  .task button.delete:hover {
+    background-color: #c82333;
+  }
+  #taskCounts {
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+    border-top: 1px solid #444;
+  }
+  
